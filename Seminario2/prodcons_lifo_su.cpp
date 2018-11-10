@@ -2,7 +2,7 @@
 // Sistemas concurrentes y Distribuidos.
 // Seminario 2. Introducción a los monitores en C++11.
 //
-// Productor/Consumidor múltiples (prodcons1_sc.cpp)
+// Productor/Consumidor múltiples (prodcons_lifo_su.cpp)
 // Ejemplo de un monitor en C++11 con semántica SU, para el problema
 // del productor/consumidor, con múltiples productores y consumidores.
 // Precondición: num_productores y num_consumidores divisores de num_items
