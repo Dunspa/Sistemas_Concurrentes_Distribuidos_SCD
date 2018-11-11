@@ -118,7 +118,6 @@ private:
    int primera_libre;            // indice de celda de la próxima inserción
    int primera_ocupada;          // indice de celda de la próxima extracción
    int num_celdas_ocupadas;          // indica el número de celdas ocupadas
-   mutex cerrojo_monitor;        // cerrojo del monitor
    // colas condicion
    CondVar ocupadas;  // cola donde espera el consumidor (n>0)
    CondVar libres;    // cola donde espera el productor (n<num_celdas_total)

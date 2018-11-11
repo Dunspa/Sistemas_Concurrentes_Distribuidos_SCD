@@ -37,7 +37,6 @@ template< int min, int max > int aleatorio(){
 class Barberia : public HoareMonitor{
 private:
    // Variables permanentes
-   bool silla_ocupada;              // Indica si hay alguien cortándose el pelo
    int cliente_actual;              // Cliente al que se le está cortando el pelo
    // Colas condición
    CondVar barbero;                 // Cola donde duerme el barberoa
@@ -51,7 +50,6 @@ public:
 };
 
 Barberia::Barberia(){
-   silla_ocupada = false;
    barbero = newCondVar();
    sala_espera = newCondVar();
    silla = newCondVar();
